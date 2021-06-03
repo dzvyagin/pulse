@@ -15,6 +15,15 @@
             margin-top: 40px;
         }
     }
+
+    .carousel {
+        &__inner {
+            width: 650px;
+            img {
+                width: 650px;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -65,6 +74,63 @@
             margin-top: 20px;
         }
     }
+
+    .slick-dots li button:before {
+        color: rgb(107, 107, 107);
+        font-family: "slick";
+        font-size: 40px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: "•";
+        text-align: center;
+        :hover {
+            cursor: pointer;
+            color: black;
+        }
+    }
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+    }
+    .slick-dots {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    li.slick-active button::before {
+        color: black;
+    }
+
+    .carousel {
+        &__inner {
+            width: 500px;
+            img {
+                width: 500px;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -102,6 +168,29 @@
     .title_left {
         text-align: center;
     }
+
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        &__tab {
+            margin-bottom: 10px;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .carousel {
+        &__inner {
+            width: 400px;
+            img {
+                width: 400px;
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 575px) {
@@ -187,5 +276,23 @@
     .button_submit {
         width: 220px;
         height: 50px;
+    }
+
+    .catalog {
+        &-item {
+            margin-right: 0;
+        }
+    }
+
+    .carousel {
+        &__inner {
+            width: 300px;
+            img {
+                width: 300px;
+            }
+        }
+        ul.slick-dots {
+            padding-left: 0;
+        }
     }
 }
