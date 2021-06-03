@@ -190,6 +190,16 @@
             }
         }
     }
+
+    .feed {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img {
+            margin-bottom: 40px;
+        }
+    }
     
 }
 
@@ -293,6 +303,20 @@
         }
         ul.slick-dots {
             padding-left: 0;
+        }
+    }
+
+    .feed {
+        &__item {
+            margin-top: 50px;
+        }
+        &__descr {
+            font-size: 13px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+        &__item:last-child &__descr {
+            border: none;
         }
     }
 }
