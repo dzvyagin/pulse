@@ -10,8 +10,8 @@
     text-transform: uppercase;
 
     &:hover {
-        transition: 0.4s all;
-        background-color: #fff;
+        transition: 1.0s background-color, color, font-weight;
+        background-color: #ffcccb;
         border: 3px solid $main-color;
         color: $main-color;
         font-weight: 900;
